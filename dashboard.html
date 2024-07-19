@@ -96,13 +96,26 @@
           <div class="swiper-slide"><img src="./assets/images/categories/offerCard.svg" width="100"  alt=""></div>
         </div>
         
-  <div class="swiper-pagination"></div>
+  <!-- <div class="swiper-pagination"></div>
   <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <div class="swiper-button-next"></div> -->
   <div class="swiper-scrollbar"></div>
       </div>
     </div>
-  
+    <!-- offercards end -->
+
+    <!-- Two carosuel section start -->
+    <div class="swiper2 my-3">
+       <div class=" swiper-wrapper">
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat1.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat2.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat3.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat4.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat4.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat3.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat2.svg"  alt=""></a></div>
+        <div class="swiper-slide"><a href="products.html"><img src="./assets/images/categories/cat1.svg"  alt=""></a></div>
+    </div>  
 
 
        <!-- Menubar -->
@@ -132,27 +145,48 @@
     crossorigin="anonymous"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
 <script>
+
+  // FIRST CAROUSEL SECTION
+
   const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
+  autoplay:true,
   slidesPerView: 1,
-    spaceBetween: 10,
-
-  // If we need pagination
+  spaceBetween: 10,
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
-  // And if we need scrollbar
+
+// SECOND CAROUSEL SECTION
+
+const swiper2 = new Swiper('.swiper2', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  autoplay: 
+    {
+      delay: 2000,
+    },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   scrollbar: {
     el: '.swiper-scrollbar',
   },
