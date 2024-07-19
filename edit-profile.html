@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Project VS</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="DexignZone" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Mobile Specific -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover"
+    />
+
+    <!-- Favicons Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/app-logo/favicon.png"
+    />
+
+    <!-- Globle Stylesheets -->
+
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      class="main-css"
+      type="text/css"
+      href="assets/css/index.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&amp;family=Raleway:wght@300;400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Header -->
+      <header class="header header-fixed border-bottom">
+        <div class="header-content">
+          <div class="left-content">
+            <a href="javascript:void(0);" class="back-btn">
+              <i class="feather icon-arrow-left"></i>
+            </a>
+          </div>
+          <div class="mid-content">
+            <h4 class="title">Edit Profile</h4>
+          </div>
+          <div class="right-content"></div>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- Main Content Start -->
+      <main class="page-content space-top p-b80">
+        <div class="container">
+          <div class="edit-profile">
+            <div class="profile-image">
+              <div class="avatar-upload">
+                <div class="avatar-preview">
+                  <div
+                    id="imagePreview"
+                    style="
+                      background-image: url(./assets/images/avatar/profile.svg);
+                    "
+                  ></div>
+                  <div class="change-btn">
+                    <input
+                      type="file"
+                      class="form-control d-none"
+                      id="imageUpload"
+                      accept=".png, .jpg, .jpeg"
+                    />
+                    <label for="imageUpload">
+                      <i class="fi fi-rr-pencil"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="name">Full Name</label>
+              <div class="input-group input-mini input-sm">
+                <input type="text" id="name" class="form-control" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="phone">Mobile Number</label>
+              <div class="input-group input-mini input-sm">
+                <input type="tel" id="phone" class="form-control" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="email">Email</label>
+              <div class="input-group input-mini input-sm">
+                <input type="email" id="email" class="form-control" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="address">Location</label>
+              <div class="input-group input-mini input-sm">
+                <input type="text" id="address" class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Main Content End -->
+
+      <!-- Footer Fixed Button -->
+      <div class="footer-fixed-btn bottom-0 bg-white">
+        <a
+          href="profile.html"
+          class="btn btn-lg btn-thin btn-primary rounded-xl w-100"
+          >Update Profile</a
+        >
+      </div>
+      <!-- Footer Fixed Button -->
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="assets/js/dz.carousel.js"></script>
+    <!-- Swiper -->
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
