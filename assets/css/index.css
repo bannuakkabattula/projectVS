@@ -28219,3 +28219,6 @@ label input {
     bottom: 12%;
     right: 6%;
 }
+.swiper-slide{
+    width: 90%;
+}
