@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --headheight: 80px;
+    --headwidth: 600px;
+}
+
+.input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+.input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-rounded {
+    border-radius: 0 50px 50px 0;
+    background-color: white;
+}
+
+.input-group> :not(:last-child) {
+    border-right: 0;
+}
+
+.input-group> :not(:first-child) {
+    border-left: 0;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.mainArea {
+    padding: 35px 15px 35px;
+}
+
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pageContent {
+    .logo {
+        text-align: center;
+
+        img {
+            padding: 10px;
+
+        }
+    }
+
+    img {
+        padding: 0px 20px 40px;
+    }
+
+    .form-group {
+        padding: 12px 8px;
+    }
+}
+
+.header {
+    .header-content {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        min-height: var(--headheight);
+        align-items: center;
+    }
+}
+
+
+
+.search-box {
+    margin-bottom: 20px;
+
+    .input-group {
+        border-radius: 41px 0 0 41px;
+
+        .form-control {
+            padding: 15px 0 15px 20px;
+            background-color: var(--input-bg);
+            border-radius: 41px 0 0 41px;
+        }
+    }
+}
+
+.input-rounded {
+    --radius: 50px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+// splash screen page css
+.mainBg {
+    background-image: url("/assets/images/bg-01.jpg");
+    background-size: cover;
+    height: 680px;
+    position: relative;
+
+    .centerSec {
+        img {
+            padding-bottom: 10px;
+        }
+
+        p {
+            padding: 10px 50px;
+        }
+    }
+}
+
+.nextBtn {
+    border: 2px solid #0089e1;
+    border-radius: 50px;
+    padding: 6px 7px 6px 30px;
+    position: absolute;
+    bottom: 11%;
+    right: 6%;
+}
+
+.subCatSec {
+    .card {
+        background-color: red;
+
+        img {
+            width: 150px;
+        }
+
+        p {
+            color: red;
+
+        }
+
+    }
+
+
+}
