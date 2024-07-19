@@ -120,12 +120,254 @@ body {
   right: 6%;
 }
 
-.subCatSec .card {
-  background-color: red;
+.subHeader {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.subCatSec .card img {
-  width: 150px;
+.subHeader h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
-.subCatSec .card p {
-  color: red;
+.subHeader p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.categSection {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+}
+.categSection img {
+  min-width: 50px;
+  width: 100%;
+  max-width: 130px;
+  border-radius: 12px;
+}
+
+.offerSec {
+  padding: 0 5px;
+}
+.offerSec img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.footer {
+  height: auto;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+}
+.footer.fixed {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  position: fixed;
+}
+.footer.fixed .btn .cart {
+  transform: scale(1.5);
+}
+.footer.transparent {
+  background-color: #e5eff5;
+}
+.footer.shadow {
+  box-shadow: 0px 0px 30px 0px rgba(69, 41, 1, 0.1) !important;
+}
+.footer .form-check.checkmark {
+  padding: 0;
+}
+.footer .form-check.checkmark .form-check-label {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid #EAEAEA;
+}
+.footer .form-check.checkmark .form-check-input {
+  display: none;
+}
+.footer .form-check.checkmark .form-check-input:checked + .form-check-label {
+  background-color: #EAEAEA;
+}
+.footer .form-check.checkmark .form-check-input:checked + .form-check-label svg path {
+  fill: var(--primary);
+}
+
+.menubar-area {
+  padding: 0;
+  position: unset;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.menubar-area.footer-fixed {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.menubar-area .toolbar-inner {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+.menubar-area .toolbar-inner .circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.menubar-area .toolbar-inner .circle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #FFA902;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+}
+.menubar-area .toolbar-inner .nav-link,
+.menubar-area .toolbar-inner .menu-toggler {
+  position: relative;
+  color: var(--title);
+  text-align: center;
+  width: 25%;
+  padding: 0 0;
+  font-size: 18px;
+}
+.menubar-area .toolbar-inner .nav-link svg,
+.menubar-area .toolbar-inner .menu-toggler svg {
+  width: 24px;
+  height: 24px;
+}
+.menubar-area .toolbar-inner .nav-link svg path,
+.menubar-area .toolbar-inner .menu-toggler svg path {
+  fill: #7d8fab;
+}
+.menubar-area .toolbar-inner .nav-link.active svg path,
+.menubar-area .toolbar-inner .menu-toggler.active svg path {
+  fill: var(--primary);
+}
+.menubar-area .toolbar-inner .nav-link.item-active,
+.menubar-area .toolbar-inner .menu-toggler.item-active {
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 900;
+  background: var(--primary);
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.menubar-area .toolbar-inner .nav-link.item-active svg path,
+.menubar-area .toolbar-inner .menu-toggler.item-active svg path {
+  fill: #fff;
+}
+.menubar-area .toolbar-inner .nav-link .title,
+.menubar-area .toolbar-inner .menu-toggler .title {
+  display: block;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.menubar-area .menubar-nav .nav-link {
+  padding: 8px 8px 8px;
+  color: var(--rgba-primary-7);
+}
+.menubar-area .menubar-nav .nav-link:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background: var(--primary);
+}
+.menubar-area .menubar-nav .nav-link span {
+  font-size: 12px;
+  display: block;
+}
+.menubar-area .menubar-nav .nav-link .cart-badge {
+  width: 16px;
+  height: 16px;
+  background-color: #FF3131;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-family: var(--font-family-title);
+  font-style: normal;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  z-index: 1;
+}
+.menubar-area .menubar-nav .nav-link i {
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+  color: var(--primary);
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.1);
+  position: relative;
+}
+.menubar-area .menubar-nav .nav-link.active {
+  color: var(--primary);
+}
+.menubar-area .menubar-nav .nav-link.active i {
+  color: #fff;
+}
+.menubar-area .menubar-nav .nav-link.active:after {
+  display: block;
+}
+
+.footer-fixed-btn {
+  position: fixed;
+  background-color: var(--body-bg);
+  bottom: 60px;
+  left: 50%;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  box-shadow: 0px 0px 30px 0px var(--rgba-primary-1);
+  z-index: 9;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
