@@ -27154,6 +27154,7 @@ label input {
 .price {
     font-weight: 600;
     font-size: 24px;
+    padding-bottom: 8px;
 }
 .productDescription{
     .title{
@@ -28092,7 +28093,4 @@ label input {
     position: absolute;
     bottom: 12%;
     right: 6%;
-}
-.swiper-slide{
-    width: 90%;
 }
