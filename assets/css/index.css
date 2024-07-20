@@ -21778,7 +21778,7 @@ select.form-select {
 
 /* Input Size */
 .input-lg .input-group-text:not(.show-pass) {
-    height: 60px;
+    height: 50px;
     padding: 8px;
 }
 
@@ -21795,7 +21795,7 @@ select.form-select {
 }
 
 .input-lg .form-control {
-    height: 60px;
+    height: 50px;
 }
 
 .input-sm .input-group-text:not(.show-pass) {
