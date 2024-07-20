@@ -382,4 +382,14 @@ body {
 
 .footLogo img {
   padding: 0 12px 20px;
+}
+
+.introSec h3 {
+  padding: 2px;
+}
+.introSec p {
+  margin-bottom: 20px;
+}
+.introSec img {
+  width: 250px;
 }/*# sourceMappingURL=style.css.map */
