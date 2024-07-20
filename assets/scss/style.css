@@ -370,4 +370,15 @@ body {
   box-shadow: 0px 0px 30px 0px var(--rgba-primary-1);
   z-index: 9;
   transform: translateX(-50%);
+}
+
+.footerSec ul {
+  padding: 0 10px;
+}
+.footerSec ul li {
+  padding: 0 4px;
+}
+
+.footLogo img {
+  padding: 0 12px 20px;
 }/*# sourceMappingURL=style.css.map */
